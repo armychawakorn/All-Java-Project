@@ -46,10 +46,13 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="rosinante"/>
+			<item value="Rosinante"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="oop5"/>
+			<item value="oop3"/>
 			<item value="oop2"/>
 			<item value="oop1"/>
 		</list>
