@@ -31,5 +31,27 @@ public class MysqlDatabase {
 		}
 		return products;
 	}
-	
+	public void insertProduct(Product p) throws SQLException {
+		String sql = "INSERT INTO product(pname, pdetail, price) VALUES(?, ?, ?)";
+		PreparedStatement statement = this.con.prepareStatement(sql);
+		statement.setString(1, p.getProductName());
+		statement.setString(2, p.getProductDetail());
+		statement.setInt(3, p.getPrice());
+		statement.executeUpdate();
+	}
+	public void updateProduct(Product p) throws SQLException {
+		String sql = "UPDATE product SET pname = ?, pdetail = ?, price = ? WHERE pid = ?";
+		PreparedStatement statement = this.con.prepareStatement(sql);
+		statement.setString(1, p.getProductName());
+		statement.setString(2, p.getProductDetail());
+		statement.setInt(3, p.getPrice());
+		statement.setInt(4, p.getPid());
+		statement.executeUpdate();
+	}
+	public void deleteProduct(int pid) throws SQLException {
+		String sql = "DELETE FROM product WHERE pid = ?";
+		PreparedStatement statement = this.con.prepareStatement(sql);
+		statement.setInt(1, pid);
+		statement.executeUpdate();
+	}
 }

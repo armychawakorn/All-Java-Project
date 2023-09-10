@@ -7,7 +7,10 @@ public class Main {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		MysqlDatabase db = new MysqlDatabase();
-		db.resetAutoIncrementToLastId();
+		ArrayList<Product> products = db.getAllProduct();
+		for(Product p : products) {
+			System.out.println(p.getProductName());
+		}
 	}
 
 }
