@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Administrator\eclipse-workspace\oop51\src\main\java\oop51\WeatherReport.java"/>
+			<item value="C:\Users\Administrator\eclipse-workspace\oop5"/>
 			<item value="C:\Users\Administrator\eclipse-workspace\oop1"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -46,15 +48,13 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="rosinante"/>
-			<item value="Rosinante"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="oop5"/>
-			<item value="oop3"/>
-			<item value="oop2"/>
-			<item value="oop1"/>
+			<item value="Mysql-Data-Access-Object"/>
+			<item value="oop53"/>
+			<item value="oop51"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -67,5 +67,21 @@
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
+	</section>
+	<section name="MavenModuleWizardParentPage">
+		<list key="moduleName">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>
